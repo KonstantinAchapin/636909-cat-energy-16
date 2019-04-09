@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -10,25 +11,22 @@
       <div class="page-header__main-menu">
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="http://placehold.it/150x100" width="33" height="38" alt="Логотип Кэт энерджи картинка">
-          </a>
-          <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-text" src="http://placehold.it/150x100" width="101" height="18" alt="Логотип Кэт энерджи надпись">
+            <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="200" height="60" alt="Логотип Кэт энерджи">
           </a>
         </div>
-        <button class="page-header__nav-toggle" type="button">Открыть меню</button>
+        <button class="page-header__nav-toggle" type="button"><span class="page-header__nav-text">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
+              <a class="site-list__link" href="#">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -40,13 +38,13 @@
       <section class="product-catalog">
         <div class="product-catalog__wrapper">
           <div class="product-catalog__title-wrapper">
-            <h2 class="product_catalog__title">Каталог продукции</h2>
+            <h2 class="product-catalog__title">Каталог продукции</h2>
           </div>
           <div class="catalog-list">
             <ul class="catalog-list__list">
               <li class="catalog-list__item">
                 <div class="catalog-list__product-image">
-                  <img class="catalog-list__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy pro 500г. с курицей">
+                  <img class="catalog-list__image" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy pro 500г. с курицей">
                 </div>
                 <div class="catalog-list__product-description">
                   <h3 class="catalog-list__title">Cat Energy pro 500 г</h3>
@@ -71,7 +69,7 @@
               </li>
               <li class="catalog-list__item">
                 <div class="catalog-list__product-image">
-                  <img class="catalog-list__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy pro 1000г. с курицей">
+                  <img class="catalog-list__image" src="../img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy pro 1000г. с курицей">
                 </div>
                 <div class="catalog-list__product-description">
                   <h3 class="catalog-list__title">Cat Energy pro 1000 г</h3>
@@ -96,7 +94,7 @@
               </li>
               <li class="catalog-list__item">
                 <div class="catalog-list__product-image">
-                  <img class="catalog-list__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy pro 500г. с рыба">
+                  <img class="catalog-list__image" src="../img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy pro 500г. с рыба">
                 </div>
                 <div class="catalog-list__product-description">
                   <h3 class="catalog-list__title">Cat Energy pro 500 г</h3>
@@ -121,7 +119,7 @@
               </li>
               <li class="catalog-list__item">
                 <div class="catalog-list__product-image">
-                  <img class="catalog-list__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy pro 1000г. с рыбой">
+                  <img class="catalog-list__image" src="../img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy pro 1000г. с рыбой">
                 </div>
                 <div class="catalog-list__product-description">
                   <h3 class="catalog-list__title">Cat Energy pro 1000 г</h3>
@@ -146,7 +144,7 @@
               </li>
               <li class="catalog-list__item">
                 <div class="catalog-list__product-image">
-                  <img class="catalog-list__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy slim 500г. с гречкой">
+                  <img class="catalog-list__image" src="../img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 500г. с гречкой">
                 </div>
                 <div class="catalog-list__product-description">
                   <h3 class="catalog-list__title">Cat Energy slim 500 г</h3>
@@ -171,7 +169,7 @@
               </li>
               <li class="catalog-list__item">
                 <div class="catalog-list__product-image">
-                  <img class="catalog-list__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy slim 500г. с гречкой">
+                  <img class="catalog-list__image" src="../img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy slim 500г. с гречкой">
                 </div>
                 <div class="catalog-list__product-description">
                   <h3 class="catalog-list__title">Cat Energy slim 1000 г</h3>
@@ -196,7 +194,7 @@
               </li>
               <li class="catalog-list__item">
                 <div class="catalog-list__product-image">
-                  <img class="catalog-list__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy pro 500г. с рисом">
+                  <img class="catalog-list__image" src="../img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy pro 500г. с рисом">
                 </div>
                 <div class="catalog-list__product-description">
                   <h3 class="catalog-list__title">Cat Energy slim 500 г</h3>
@@ -224,6 +222,7 @@
         </div>
         <div class="catalog-add">
           <div class="catalog-add__wrapper">
+            <span class="catalog-add__icon-plus"></span>
             <b class="catalog-add__subtitle">Показать ещё 100500 товаров</b>
             <p class="catalog-add__text">На самом деле вкусов гораздо больше!</p>
             <p>
@@ -238,18 +237,18 @@
     <footer class="footer-page">
       <div class="footer-page__wrapper">
         <div class="footer-page__logo">
-          <img class="footer-page__logo-text" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Кэт энерджи надпись">
+          <img class="footer-page__logo-text" src="../img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи надпись">
         </div>
         <div class="footer-page__social social">
-          <ul class="social_list">
-            <li class="social_item">
-              <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#"><span class="social__text">Мы в Вконтакте</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
+              <a class="social__link social__link--instagram" href="#"><span class="social__text">Мы в Инстаграм</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="#"><span class="social__text">Мы в Фейсбуке</span></a>
             </li>
           </ul>
         </div>
