@@ -1,5 +1,5 @@
 .button {
-  padding: 15px 55px;
+  padding: 15px 70px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -11,4 +11,10 @@
 .button--gray {
   background: @light-gray;
   color: @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    padding: 15px 55px;
+  }
 }
