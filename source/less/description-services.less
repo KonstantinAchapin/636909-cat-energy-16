@@ -73,13 +73,14 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .description-services__item {
-    width: 350px;
+    width: 330px;
     padding-left: 0;
-    padding-bottom: 155px;
+    padding-bottom: 130px;
   }
 
   .description-services__item::after {
@@ -123,10 +124,18 @@
 
 @media (min-width: @desktop-width) {
   .description-services__wrapper {
-    padding: 0 30px;
+    padding: 0 110px;
   }
 
   .description-services__item {
-    width: 325px;
+    width: 230px;
+  }
+
+  .description-services__text {
+    padding-top: 90px;
+  }
+
+  .description-services__title {
+    margin-bottom: 75px;
   }
 }
