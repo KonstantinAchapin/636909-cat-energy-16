@@ -2,10 +2,23 @@
   margin-top: 35px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .developer__text {
   font-size: 16px;
   line-height: 16px;
   color: @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .developer {
+    margin-top: 0;
+  }
+
+  .developer__text {
+    position: relative;
+    right: 15px;
+    margin: 0;
+  }
 }
