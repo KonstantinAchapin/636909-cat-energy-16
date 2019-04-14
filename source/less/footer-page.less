@@ -1,4 +1,39 @@
 .footer-page {
-  padding-top: 40px;
+  padding: 40px 20px 20px;
   background: @light-gray;
+}
+
+.footer-page__logo {
+  margin-bottom: 30px;
+}
+
+.footer-page__logo-text {
+  display: flex;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-page {
+    padding: 60px 30px 50px;
+  }
+
+  .footer-page__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-page__logo {
+    margin-bottom: 0;
+  }
+
+  .footer-page__logo-text {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-page {
+    padding: 60px 110px 50px;
+  }
 }

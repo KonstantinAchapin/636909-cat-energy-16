@@ -1,4 +1,6 @@
 .academy-logo {
+  position: relative;
+  top: 5px;
   display: inline-block;
   width: 28px;
   height: 34px;
@@ -7,4 +9,10 @@
   background-size: cover;
   filter: grayscale(1);
   opacity: 0.8;
+}
+
+@media (min-width: @tablet-width) {
+  .academy-logo {
+    top: -5px;
+  }
 }

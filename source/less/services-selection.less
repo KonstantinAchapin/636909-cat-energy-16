@@ -4,7 +4,7 @@
 
 .services-selection__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
 }
 
@@ -63,12 +63,14 @@
   font-size: 14px;
   line-height: 18px;
   color: @gray;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @brightest-gray;
 }
 
 .services-selection__toggle {
+  margin: 3px 0;
   display: inline-block;
   position: relative;
-  margin-top: 40px;
 }
 
 .services-selection__toggle::after {
@@ -90,4 +92,95 @@
   text-transform: uppercase;
   color: @dark-gray;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .services-selection__list {
+    margin: 0;
+    padding: 0 30px;
+    list-style: none;
+  }
+
+  .services-selection__item {
+    position: relative;
+    padding: 50px;
+  }
+
+  .services-selection__icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  .services-selection__icon--losing-weight::after {
+    width: 173px;
+    height: 185px;
+  }
+
+  .services-selection__icon--nobar-weight::after {
+    width: 226px;
+    height: 168px;
+  }
+
+  .services-selection__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 0;
+  }
+
+  .services-selection__text {
+    width: 375px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .services-selection__toggle-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .services-selection__toggle::after {
+    top: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services-selection__list {
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .services-selection__item {
+    width: 470px;
+  }
+
+  .services-selection__icon {
+    top: 0;
+    right: 0;
+    width: 102px;
+    height: 102px;
+    position: relative;
+  }
+
+  .services-selection__title {
+    position: relative;
+    top: -35px;
+    left: 50px;
+  }
+
+  .services-selection__icon--losing-weight::after {
+    width: 77px;
+    height: 103px;
+  }
+
+  .services-selection__icon--nobar-weight::after {
+    width: 123px;
+    height: 95px;
+  }
 }

@@ -1,5 +1,20 @@
 .product-catalog__title {
+  margin: 0;
+  padding: 20px 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+  text-align: center;
+  border-bottom: 1px solid @brightest-gray;
+  border-top: 1px solid @brightest-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .product-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    border: none;
+    margin-bottom: 170px;
+  }
 }

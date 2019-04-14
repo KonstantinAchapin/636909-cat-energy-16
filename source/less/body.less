@@ -13,10 +13,22 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  width: 320px;
+  margin: auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @dark-gray;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1440px;
+  }
 }
