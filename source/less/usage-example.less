@@ -1,0 +1,62 @@
+.usage-example {
+  background: @light-gray;
+}
+
+.usage-example__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  font-weight: 400;
+}
+
+.usage-example__wrapper {
+  padding: 0 20px;
+}
+
+.usage-example__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+
+.usage-example__weight {
+  text-transform: uppercase;
+}
+
+.usage-example__procedure {
+  text-transform: lowercase;
+}
+
+.usage-example__expenses {
+  text-transform: uppercase;
+}
+
+.usage-example__reveal {
+  position: relative;
+  padding-top: 300px;
+  margin-top: 50px;
+}
+
+.usage-example__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.usage-example__image--after {
+  clip: rect(0, auto, auto, 345px);
+}
+
+.usage-example__image--before {
+  clip: rect(0, 345px, auto, 0);
+}
+
+@media (min-width: @tablet-width) {
+  .usage-example__reveal {
+    padding-top: 600px;
+  }
+}
