@@ -1,20 +1,32 @@
 .usage-example {
+  padding-bottom: 40px;
   background: @light-gray;
 }
 
 .usage-example__title {
+  padding: 0 20px;
+  display: inline-block;
+  margin-top: 19px;
+  margin-bottom: 8px;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
   font-weight: 400;
 }
 
-.usage-example__wrapper {
+.usage-example__description {
   padding: 0 20px;
+}
+
+.usage-example__text {
+  margin-bottom: 26px;
+  width: 270px;
+  font-family: "Arial", sans-serif;
 }
 
 .usage-example__list {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -23,22 +35,45 @@
   text-align: center;
 }
 
+.usage-example__item {
+  width: 125px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid @brightest-gray;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
 .usage-example__weight {
+  margin-top: 13px;
   text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .usage-example__procedure {
+  margin-top: 9px;
+  width: 75px;
   text-transform: lowercase;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  background: @light-gray;
+  z-index: 5;
 }
 
 .usage-example__expenses {
+  display: block;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .usage-example__reveal {
   position: relative;
-  padding-top: 300px;
-  margin-top: 50px;
+  padding-top: 257px;
+  margin-top: 36px;
 }
 
 .usage-example__image {
@@ -54,6 +89,48 @@
 .usage-example__image--before {
   clip: rect(0, 345px, auto, 0);
 }
+
+/*Стилизация input range*/
+
+.usage-example__range-wrapper {
+  margin: auto;
+  width: 200px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.usage-example__range {
+  margin: auto;
+  width: 76px;
+  height: 12px;
+  appearance: none;
+  border: 1px solid @middle-gray;
+  border-radius: 10px;
+  padding: 0 5px;
+  cursor: grab;
+}
+
+.usage-example__range::-webkit-slider-thumb {
+  appearance: none;
+  width: 35px;
+  height: 6px;
+  background: @light-green;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.usage-example__range::-webkit-slider-thumb:active,
+.usage-example__range:active {
+  cursor: grabbing;
+}
+
+.usage-example__range-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/*Стилизация input range*/
 
 @media (min-width: @tablet-width) {
   .usage-example__reveal {
