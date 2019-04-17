@@ -133,7 +133,102 @@
 /*Стилизация input range*/
 
 @media (min-width: @tablet-width) {
+  .usage-example {
+    padding-bottom: 66px;
+  }
+
   .usage-example__reveal {
-    padding-top: 600px;
+    padding-top: 533px;
+  }
+
+  .usage-example__title {
+    padding: 10px 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .usage-example__description {
+    padding: 10px 30px;
+    padding-top: 38px;
+  }
+
+  .usage-example__text {
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .usage__example__results-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .usage-example__list {
+    width: 367px;
+  }
+
+  .usage-example__item {
+    width: 163px;
+    height: 74px;
+  }
+
+  .usage-example__weight {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 400;
+  }
+
+  .usage-example__procedure {
+    width: 140px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .usage-example__expenses {
+    margin-top: 5px;
+    width: 180px;
+    text-align: end;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .usage-example__image {
+    top: 11px;
+    left: 17px;
+  }
+
+  .usage-example__range-wrapper {
+    width: 570px;
+  }
+
+  .usage-example__range {
+    width: 435px;
+    height: 6px;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0 5px;
+    cursor: grab;
+  }
+
+  .usage-example__range::-webkit-slider-thumb {
+    position: relative;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border: 12px solid @white;
+    border-radius: 200px;
+    background: @light-green;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    cursor: grab;
+  }
+
+  .usage-example__range-text {
+    font-size: 20px;
   }
 }

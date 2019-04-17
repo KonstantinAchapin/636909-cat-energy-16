@@ -22,9 +22,9 @@ buttonOpen.addEventListener('click', function() {
 function revealImage() {
   size = document.querySelector(".usage-example__range").value;
   imgFirst = document.querySelector(".usage-example__image--after");
-  imgFirst.style.clip = "rect(0px, " + (size) + "px, auto, 0px)";
+  imgFirst.style.clip = "rect(0px, auto, auto, " + (size) + "px)";
   imgSecond = document.querySelector(".usage-example__image--before");
-  imgSecond.style.clip = "rect(0px, auto, auto, " + (size) + "px)";
+  imgSecond.style.clip = "rect(0px, " + (size) + "px, auto, 0px)";
 }
 
 //JS для яндекс карт

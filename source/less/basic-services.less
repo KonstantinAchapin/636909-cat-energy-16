@@ -37,15 +37,21 @@
 @media (min-width: @tablet-width) {
   .basic-services {
     align-items: flex-start;
-    padding-left: 120px;
     background: none;
   }
 
   .basic-services__text {
     width: 425px;
-    padding-bottom: 45px;
+    padding-left: 100px;
+    padding-top: 33px;
+    padding-bottom: 40px;
     align-items: flex-start;
     color: @dark-gray;
+  }
+
+  .basic-services__toggle {
+    margin-left: 100px;
+    padding: 15px 26px;
   }
 
   .basic-services__title {
@@ -59,13 +65,21 @@
   }
 
   .basic-services__appeal {
+    margin-left: 0;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .basic-services__product-image {
+  .basic-services__product-wrapper {
+    margin-top: -107px;
+    margin-left: 13px;
     order: 2;
-    margin-top: 50px;
+    z-index: -1;
+  }
+
+  .basic-services__product-image {
+    width: 709px;
+    height: 609px;
   }
 }
 
