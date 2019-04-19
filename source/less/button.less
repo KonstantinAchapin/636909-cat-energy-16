@@ -8,9 +8,26 @@
   text-decoration: none;
 }
 
+.button:hover {
+  background: @middle-green;
+}
+
+.button:active {
+  background: @middle-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--gray {
   background: @light-gray;
   color: @gray;
+}
+
+.button--gray:hover {
+  background: @button-hover-gray;
+}
+
+.button--gray:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
