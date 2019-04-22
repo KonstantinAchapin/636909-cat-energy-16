@@ -4,20 +4,28 @@
 }
 
 .catalog-list__item {
-  padding: 0 20px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid @brightest-gray;
+  padding: 0 20px 19px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
   list-style: none;
 }
 
+.catalog-list__image {
+  position: relative;
+  top: 1px;
+}
+
 .catalog-list__product-information {
+  margin-bottom: -4px;
   display: flex;
   flex-direction: row;
 }
 
 .catalog-list__title {
+  margin-top: 22px;
   width: 80px;
   text-transform: uppercase;
+  font-weight: 400;
   color: @dark-gray;
 }
 
@@ -25,12 +33,23 @@
   width: 140px;
 }
 
+.catalog-list__field,
+.catalog-list__value {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .catalog-list__field {
+  position: relative;
+  left: 7px;
   text-align: right;
 }
 
 .catalog-list__toggle {
-  padding: 15px 113px;
+  padding: 8px 111px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -47,8 +66,7 @@
   }
 
   .catalog-list__item {
-    padding: 0;
-    padding-bottom: 25px;
+    padding: 0 0 35px;
     margin-bottom: 140px;
     border: none;
     width: 325px;
@@ -64,17 +82,35 @@
   }
 
   .catalog-list__title {
-    margin: auto;
-    margin-bottom: 25px;
+    margin: auto auto 21px;
     width: 130px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
   }
 
+  .catalog-list__product-image {
+    width: 324px;
+    margin-top: -66px;
+    margin-bottom: 24px;
+    height: 208px;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1000;
+  }
+
   .catalog-list__image {
-    margin-top: -70px;
-    margin-bottom: 40px;
+    margin-top: -47px;
+    margin-left: -3px;
+    margin-bottom: 15px;
+    width: 324px;
+  }
+
+  .catalog-list__field,
+  .catalog-list__value {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .catalog-list__description-list {
@@ -85,12 +121,7 @@
   }
 
   .catalog-list__toggle {
-    padding: 15px 98px;
-  }
-
-  .catalog-list__field,
-  .catalog-list__value {
-    padding: 5px 0;
+    padding: 8px 93px;
   }
 }
 
@@ -105,6 +136,11 @@
 
   .catalog-list__title {
     width: 140px;
+  }
+
+  .catalog-list__image {
+    margin-left: 28px;
+    width: 245px;
   }
 
   .catalog-list__description-list {

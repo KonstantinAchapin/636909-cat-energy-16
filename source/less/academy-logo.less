@@ -1,18 +1,19 @@
 .academy-logo {
-  position: relative;
-  top: 5px;
-  display: inline-block;
-  width: 28px;
-  height: 34px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: grayscale(1);
-  opacity: 0.8;
+  margin-right: -8px;
+  fill: @footer-link-gray;
 }
 
 @media (min-width: @tablet-width) {
   .academy-logo {
-    top: -5px;
+    margin-right: -8px;
+    margin-top: 0;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .academy-logo {
+    margin-right: -8px;
+    fill: @footer-link-gray;
   }
 }

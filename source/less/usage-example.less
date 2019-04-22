@@ -1,0 +1,346 @@
+.usage-example {
+  padding-bottom: 40px;
+  background: @light-gray;
+}
+
+.usage-example__wrapper {
+  position: relative;
+}
+
+.usage-example__title {
+  padding: 0 20px;
+  display: inline-block;
+  margin-top: 19px;
+  margin-bottom: 8px;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  font-weight: 400;
+}
+
+.usage-example__description {
+  padding: 0 20px;
+}
+
+.usage-example__text {
+  margin-bottom: 26px;
+  width: 270px;
+  font-family: "Arial", sans-serif;
+}
+
+.usage-example__list {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+
+.usage-example__item {
+  width: 125px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid @middle-gray;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.usage-example__weight {
+  margin-top: 13px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.usage-example__procedure {
+  margin-top: 9px;
+  width: 75px;
+  text-transform: lowercase;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  background: @light-gray;
+  z-index: 5;
+}
+
+.usage-example__expenses {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+}
+
+.usage-example__reveal {
+  padding-top: 257px;
+  margin-top: 36px;
+}
+
+.usage-example__image {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+
+.usage-example__range-wrapper {
+  margin: auto;
+  width: 200px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.usage-example__range {
+  position: relative;
+  margin: auto;
+  width: 84px;
+  height: 12px;
+  appearance: none;
+  border: 1px solid @middle-gray;
+  border-radius: 10px;
+  background: @white;
+}
+
+.usage-example__range-control {
+  position: absolute;
+  top: 3px;
+  left: 26%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 6px;
+  border-radius: 5px;
+  background: #68b738;
+}
+
+
+.usage-example__range-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .usage-example {
+    position: relative;
+    padding-bottom: 66px;
+    background: none;
+  }
+
+  .usage-example::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 464px;
+    width: 100%;
+    background: @light-gray;
+    z-index: -50;
+  }
+
+  .usage-example::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 464px;
+    width: 50%;
+    background: @background-usage-gray;
+    z-index: -25;
+  }
+
+  .usage-example__reveal {
+    padding-top: 533px;
+  }
+
+  .usage-example__title {
+    padding: 10px 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .usage-example__description {
+    padding: 10px 30px;
+    padding-top: 38px;
+  }
+
+  .usage-example__text {
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 680px;
+  }
+
+  .usage__example__results-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .usage-example__list {
+    width: 367px;
+  }
+
+  .usage-example__item {
+    width: 163px;
+    height: 74px;
+  }
+
+  .usage-example__weight {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 400;
+  }
+
+  .usage-example__procedure {
+    width: 140px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    background: @white;
+  }
+
+  .usage-example__expenses {
+    margin-top: 5px;
+    width: 180px;
+    text-align: end;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .usage-example__image {
+    bottom: 50px;
+    left: 47px;
+  }
+
+  .usage-example__range-wrapper {
+    width: 570px;
+  }
+
+  .usage-example__range {
+    width: 420px;
+    height: 6px;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0 5px;
+    background: @background-range-gray;
+  }
+
+  .usage-example__range-control {
+    position: absolute;
+    top: -11px;
+    left: 50.5%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    border: 11px solid @white;
+    box-shadow: 0 0 0 1px @middle-gray, 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 500px;
+    background: #68b738;
+  }
+
+  .usage-example__range-control:hover {
+    position: absolute;
+    top: -11px;
+    left: 50.5%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    border: 11px solid @white;
+    box-shadow: 0 0 0 1px @middle-gray, 0 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 500px;
+  }
+
+  .usage-example__range-control:active {
+    position: absolute;
+    top: -11px;
+    left: 50.5%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    border: 11px solid @white;
+    box-shadow: 0 0 0 2px @light-green, 0 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 500px;
+  }
+
+  .usage-example__range-text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .usage-example {
+    position: relative;
+  }
+
+  .usage-example::before {
+    height: 457px;
+  }
+
+  .usage-example::after {
+    height: 457px;
+  }
+
+  .usage-example__wrapper {
+    padding: 0 110px;
+  }
+
+  .usage-example__title {
+    margin: 0;
+    padding: 0;
+  }
+
+  .usage-example__description {
+    padding: 0;
+    padding-top: 129px;
+  }
+
+  .usage-example__text {
+    width: 435px;
+    margin-bottom: 68px;
+  }
+
+  .usage__example__results-wrapper {
+    flex-direction: column;
+  }
+
+  .usage-example__expenses {
+    margin-top: 7px;
+    width: 270px;
+  }
+
+  .usage-example__expenses--position {
+    position: relative;
+    left: 57px;
+  }
+
+  .usage-example__list {
+    margin-bottom: 49px;
+  }
+
+  .usage-example__reveal {
+    padding: 0;
+    margin-top: -40px;
+    float: right;
+  }
+
+  .usage-example__image {
+    left: 678px;
+    top: -57px;
+  }
+
+  .usage-example__weight {
+    margin-top: 16px;
+  }
+
+  .usage-example__procedure {
+    margin-top: 14px;
+    background: @light-gray;
+  }
+}

@@ -1,5 +1,5 @@
 .button {
-  padding: 15px 70px;
+  padding: 9px 72px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -8,13 +8,34 @@
   text-decoration: none;
 }
 
+.button:hover {
+  background: @middle-green;
+}
+
+.button:active {
+  background: @middle-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--gray {
   background: @light-gray;
   color: @gray;
+  padding: 11px 93px;
+  font-size: 16px;
+}
+
+.button--gray:hover {
+  background: @button-hover-gray;
+}
+
+.button--gray:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
   .button {
+    font-size: 20px;
+    line-height: 20px;
     padding: 15px 55px;
   }
 }

@@ -1,33 +1,37 @@
 .services-selection {
-  margin-top: 40px;
+  margin-top: 17px;
 }
 
 .services-selection__list {
   margin: 0;
+  margin-bottom: -13px;
   padding: 0 20px;
   list-style: none;
 }
 
 .services-selection__item {
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 10px 20px;
+  margin-bottom: 19px;
+  padding-bottom: 19px;
   background: @light-gray;
 }
 
 .services-selection__title {
   display: inline-block;
   margin: 0;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-left: 18px;
+  margin-bottom: 18px;
   padding: 0;
   font-size: 24px;
+  font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
 }
 
 .services-selection__icon {
   position: relative;
-  top: 15px;
+  top: 17px;
+  left: 2px;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -60,30 +64,19 @@
 }
 
 .services-selection__text {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @gray;
-  padding-bottom: 20px;
-  border-bottom: 1px solid @brightest-gray;
+  border-bottom: 1px solid @line-gray;
 }
 
 .services-selection__toggle {
   margin: 3px 0;
   display: inline-block;
   position: relative;
-}
-
-.services-selection__toggle::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 11px;
-  background-image: url("../img/icon-right-arrow-long.svg");
-  top: 3px;
-  right: -35px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .services-selection__toggle-link {
@@ -94,7 +87,28 @@
   text-decoration: none;
 }
 
+.services-selection__toggle-link::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  top: 4px;
+  right: -35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.services-selection__toggle-link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
+  .services-selection {
+    margin-top: 0;
+  }
+
   .services-selection__list {
     margin: 0;
     padding: 0 30px;
@@ -102,8 +116,9 @@
   }
 
   .services-selection__item {
+    padding: 55px;
+    margin-bottom: 32px;
     position: relative;
-    padding: 50px;
   }
 
   .services-selection__icon {
@@ -111,31 +126,42 @@
     height: 200px;
     border-radius: 200px;
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 88px;
+    left: 450px;
   }
 
   .services-selection__icon--losing-weight::after {
-    width: 173px;
-    height: 185px;
+    width: 180px;
+    height: 196px;
+    top: -10px;
+    left: 5px;
   }
 
   .services-selection__icon--nobar-weight::after {
-    width: 226px;
-    height: 168px;
+    width: 268px;
+    height: 128px;
+    top: 35px;
+    left: -39px;
   }
 
   .services-selection__title {
     font-size: 36px;
     line-height: 37px;
     margin-left: 0;
+    margin-top: 19px;
   }
 
   .services-selection__text {
-    width: 375px;
+    width: 340px;
+    margin-top: 7px;
+    margin-bottom: 31px;
     font-size: 16px;
     line-height: 24px;
     border: none;
+  }
+
+  .services-selection__toggle {
+    margin: 6px 0;
   }
 
   .services-selection__toggle-link {
@@ -143,8 +169,8 @@
     line-height: 20px;
   }
 
-  .services-selection__toggle::after {
-    top: 5px;
+  .services-selection__toggle-link::after {
+    right: -47px;
   }
 }
 
@@ -157,30 +183,41 @@
   }
 
   .services-selection__item {
-    width: 470px;
+    width: 458px;
   }
 
   .services-selection__icon {
-    top: 0;
-    right: 0;
-    width: 102px;
-    height: 102px;
+    top: -10px;
+    left: -4px;
+    width: 100px;
+    height: 100px;
     position: relative;
   }
 
   .services-selection__title {
     position: relative;
-    top: -35px;
-    left: 50px;
+    margin: 0;
+    top: -46px;
+    left: 53px;
+  }
+
+  .services-selection__text {
+    width: 480px;
+    margin-top: 29px;
+    margin-left: -6px;
+    margin-bottom: 5px;
   }
 
   .services-selection__icon--losing-weight::after {
-    width: 77px;
-    height: 103px;
+    width: 90px;
+    height: 97px;
+    top: -5px;
   }
 
   .services-selection__icon--nobar-weight::after {
-    width: 123px;
-    height: 95px;
+    width: 134px;
+    height: 106px;
+    top: -1px;
+    left: -19px;
   }
 }

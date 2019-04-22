@@ -11,20 +11,22 @@
 
 .description-services__list {
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
 }
 
 .description-services__text {
-  width: 180px;
+  width: 200px;
   color: @gray;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Arial", sans-serif;
 }
 
 .description-services__item {
   padding-left: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 27px;
   position: relative;
 }
 
@@ -38,7 +40,7 @@
   background: @light-green;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 50px;
 }
 
 .description-services__item--functional::after {
@@ -78,14 +80,15 @@
   }
 
   .description-services__item {
-    width: 330px;
+    width: 325px;
     padding-left: 0;
-    padding-bottom: 130px;
+    padding-bottom: 75px;
   }
 
   .description-services__item::after {
     content: "";
     position: absolute;
+    top: 18px;
     width: 80px;
     height: 80px;
   }
@@ -93,9 +96,9 @@
   .description-services__item::before {
     position: absolute;
     font-size: 280px;
-    color: @brightest-gray;
-    top: 90px;
-    left: 80px;
+    color: @light-gray;
+    top: 110px;
+    left: 118px;
     z-index: -5;
   }
 
@@ -116,9 +119,10 @@
   }
 
   .description-services__text {
+    width: 245px;
     font-size: 16px;
     line-height: 24px;
-    padding-top: 70px;
+    padding-top: 113px;
   }
 }
 
@@ -128,14 +132,16 @@
   }
 
   .description-services__item {
-    width: 230px;
+    padding-bottom: 84px;
+    width: 245px;
   }
 
   .description-services__text {
-    padding-top: 90px;
+    padding-top: 115px;
   }
 
   .description-services__title {
-    margin-bottom: 75px;
+    margin-bottom: 54px;
+    margin-top: 41px;
   }
 }
