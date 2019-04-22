@@ -7,7 +7,6 @@
   width: 130px;
   margin: 0 auto;
   padding: 20px;
-  padding-left: 5px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -24,27 +23,32 @@
   background-position: center;
   background-size: contain;
   opacity: 0.6;
+  fill: @footer-link-gray;
 }
+
+.social__link:hover {
+  fill: @light-green;
+}
+
+.social__link:active {
+  fill: @light-green;
+  opacity: 0.3;
+}
+
 
 .social__link--vkontakte {
   width: 27px;
   height: 14px;
-  background: url("../img/icon-vk-mobile.svg");
-  background-repeat: no-repeat;
 }
 
 .social__link--instagram {
   width: 17px;
   height: 17px;
-  background-image: url("../img/icon-insta-mobile.svg");
-  background-repeat: no-repeat;
 }
 
 .social__link--facebook {
   width: 12px;
   height: 20px;
-  background-image: url("../img/icon-fb-mobile.svg");
-  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
