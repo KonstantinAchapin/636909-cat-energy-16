@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
@@ -123,18 +124,15 @@
             </div>
             <div class="usage-example__reveal">
               <picture>
-                <source media="(min-width: 1440px)" srcset="./img/after-desktop@1x.png" sizes="100vw">
-                <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png" sizes="100vw">
-                <img class="usage-example__image usage-example__image--after" src="./img/before-mobile@1x.png" sizes="100vw" alt="Толстый кот">
-              </picture>
-              <picture>
                 <source media="(min-width: 1440px)" srcset="./img/before-desktop@1x.png" sizes="100vw">
                 <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png" sizes="100vw">
-                <img class="usage-example__image usage-example__image--before" src="./img/after-mobile@1x.png" sizes="100vw" alt="Худой кот">
+                <img class="usage-example__image usage-example__image--before" src="./img/before-mobile@1x.png" sizes="100vw" alt="Толстый кот">
               </picture>
               <div class="usage-example__range-wrapper">
                 <span class="usage-example__range-text">Было</span>
-                <input class="usage-example__range" type="range" min="1" max="690" id="size" oninput="revealImage()" value="350" />
+                <div class="usage-example__range">
+                  <div class="usage-example__range-control"></div>
+                </div>
                 <span class="usage-example__range-text">Стало</span>
               </div>
             </div>
@@ -195,8 +193,8 @@
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="developer__text">HTML Academy</p>
             <div>
-            <svg class="developer__logo-image academy-logo" width="40px" height="47px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" /></svg>
+              <svg class="developer__logo-image academy-logo" width="40px" height="47px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" /></svg>
             </div>
           </a>
         </div>
