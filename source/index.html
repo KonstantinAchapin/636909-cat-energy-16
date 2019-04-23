@@ -11,7 +11,7 @@
 
   <body>
     <header class="page-header">
-      <div class="page-header__main-menu">
+      <div class="page-header__main-menu page-inner">
         <div class="page-header__logo">
           <picture>
             <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg" sizes="100vw">
@@ -56,7 +56,7 @@
               <a class="basic-services__toggle button" href="#">Подобрать программу</a>
             </p>
           </div>
-          <div class="services-selection">
+          <div class="services-selection page-inner">
             <ul class="services-selection__list">
               <li class="services-selection__item">
                 <span class="services-selection__icon services-selection__icon--losing-weight"></span>
@@ -82,7 +82,7 @@
         </div>
       </section>
 
-      <section class="description-services">
+      <section class="description-services page-inner">
         <div class="description-services__wrapper">
           <h2 class="description-services__title">Как это работает</h2>
           <ul class="description-services__list">
@@ -103,37 +103,39 @@
       </section>
 
       <section class="usage-example">
-        <div class="usage-example__wrapper">
-          <h2 class="usage-example__title">Живой пример</h2>
-          <div class="usage-example__description">
-            <p class="usage-example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <div class="usage__example__results-wrapper">
-              <ul class="usage-example__list">
-                <li class="usage-example__item">
-                  <b class="usage-example__weight">5 кг</b>
-                  <p class="usage-example__procedure">Снижение веса</p>
-                </li>
-                <li class="usage-example__item">
-                  <b class="usage-example__weight">60 дней</b>
-                  <p class="usage-example__procedure">Затрачено времени</p>
-                </li>
-              </ul>
-              <b class="usage-example__expenses">Затраты на питание: <span class="usage-example__expenses--position">15 000 руб.</span></b>
-            </div>
-            <div class="usage-example__reveal">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/before-desktop@1x.png" sizes="100vw">
-                <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png" sizes="100vw">
-                <img class="usage-example__image usage-example__image--before" src="./img/before-mobile@1x.png" sizes="100vw" alt="Толстый кот">
-              </picture>
-              <div class="usage-example__range-wrapper">
-                <span class="usage-example__range-text">Было</span>
-                <div class="usage-example__range">
-                  <div class="usage-example__range-control"></div>
+        <div class="page-inner">
+          <div class="usage-example__wrapper">
+            <h2 class="usage-example__title">Живой пример</h2>
+            <div class="usage-example__description">
+              <p class="usage-example__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="usage__example__results-wrapper">
+                <ul class="usage-example__list">
+                  <li class="usage-example__item">
+                    <b class="usage-example__weight">5 кг</b>
+                    <p class="usage-example__procedure">Снижение веса</p>
+                  </li>
+                  <li class="usage-example__item">
+                    <b class="usage-example__weight">60 дней</b>
+                    <p class="usage-example__procedure">Затрачено времени</p>
+                  </li>
+                </ul>
+                <b class="usage-example__expenses">Затраты на питание: <span class="usage-example__expenses--position">15 000 руб.</span></b>
+              </div>
+              <div class="usage-example__reveal">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="./img/before-desktop@1x.png" sizes="100vw">
+                  <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png" sizes="100vw">
+                  <img class="usage-example__image usage-example__image--before" src="./img/before-mobile@1x.png" sizes="100vw" alt="Толстый кот">
+                </picture>
+                <div class="usage-example__range-wrapper">
+                  <span class="usage-example__range-text">Было</span>
+                  <div class="usage-example__range">
+                    <div class="usage-example__range-control"></div>
+                  </div>
+                  <span class="usage-example__range-text">Стало</span>
                 </div>
-                <span class="usage-example__range-text">Стало</span>
               </div>
             </div>
           </div>

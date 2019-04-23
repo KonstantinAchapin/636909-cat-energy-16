@@ -13,12 +13,18 @@
 }
 
 body {
-  width: 320px;
+  min-width: 320px;
   margin: auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @dark-gray;
+}
+
+.page-inner {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 img {
@@ -42,13 +48,13 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: @tablet-width) {
-  body {
+  .page-inner {
     width: 768px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  body {
+  .page-inner {
     width: 1440px;
   }
 }

@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   </head>
 
   <body>
     <header class="page-header">
-      <div class="page-header__main-menu">
+      <div class="page-header__main-menu page-inner">
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
             <div class="page-header__logo">
@@ -43,7 +44,7 @@
 
     <main class="page-main">
 
-      <section class="product-catalog">
+      <section class="product-catalog page-inner">
         <div class="product-catalog__wrapper">
           <div class="product-catalog__title-wrapper">
             <h2 class="product-catalog__title">Каталог продукции</h2>
@@ -278,6 +279,95 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="additional-goods">
+        <h2 class="additional-goods__title">Дополнительные товары</h2>
+        <div class="additional-goods__products">
+          <div class="additional-goods__column">
+            <ul class="additional-goods__list">
+              <li class="additional-goods__item">
+                <div class="additional-goods__item-wrapper">
+                  <div class="additional-goods__row">
+                    <h3 class="additional-goods__subtitle">Сахарозаменитель</h3>
+                  </div>
+                  <div class="additional-goods__specification">
+                    <table class="additional-goods__specification-text">
+                      <tr>
+                        <td>1 упаковка (100 г)</td>
+                        <td>200 Р.</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>
+                    <a class="additional-goods__toggle button" href="#">Заказать</a>
+                  </p>
+                </div>
+              </li>
+              <li class="additional-goods__item">
+                <div class="additional-goods__item-wrapper">
+                  <div class="additional-goods__row">
+                    <h3 class="additional-goods__subtitle">Питьевая вода</h3>
+                  </div>
+                  <div class="additional-goods__specification">
+                    <table class="additional-goods__specification-text">
+                      <tr>
+                        <td>5 литров</td>
+                        <td>50 Р.</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>
+                    <a class="additional-goods__toggle button" href="#">Заказать</a>
+                  </p>
+                </div>
+              </li>
+              <li class="additional-goods__item">
+                <div class="additional-goods__item-wrapper">
+                  <div class="additional-goods__row">
+                    <h3 class="additional-goods__subtitle">Молоко</h3>
+                  </div>
+                  <div class="additional-goods__specification">
+                    <table class="additional-goods__specification-text">
+                      <tr>
+                        <td>1 литр</td>
+                        <td>100 Р.</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>
+                    <a class="additional-goods__toggle button" href="#">Заказать</a>
+                  </p>
+                </div>
+              </li>
+              <li class="additional-goods__item">
+                <div class="additional-goods__item-wrapper">
+                  <div class="additional-goods__row">
+                    <h3 class="additional-goods__subtitle">Витамины</h3>
+                  </div>
+                  <div class="additional-goods__specification">
+                    <table class="additional-goods__specification-text">
+                      <tr>
+                        <td>1 упаковка (30 г)</td>
+                        <td>300 Р.</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>
+                    <a class="additional-goods__toggle button" href="#">Заказать</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="additional-present">
+            <div class="additional-present__image">
+              <svg width="55" height="60">
+              </svg>
+              <p class="additional-present__text">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
           </div>
         </div>
       </section>
