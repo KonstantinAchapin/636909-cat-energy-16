@@ -1,0 +1,118 @@
+.contact-field {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contact-field__row {
+  padding: 0 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact-field__title-wrapper {
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.contact-field__title {
+  width: 200px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  position: relative;
+  display: inline-block;
+  padding-right: 22px;
+  margin-bottom: 35px;
+  margin-top: 0;
+  background: @white;
+}
+
+.contact-field--width {
+  margin-right: 77px;
+}
+
+.contact-field__title::after,
+.contact-field__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 2px;
+  margin-top: 1px;
+  background: @light-green;
+  z-index: -1;
+}
+
+.contact-field__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.contact-field__text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  flex-shrink: 0;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.contact-field__control {
+  width: 100%;
+  border: 1px solid @brightest-gray;
+  padding: 13px 15px;
+  transition: 0.3s;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: @dark-gray;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contact-field__control::placeholder {
+  color: @gray;
+}
+
+.contact-field__control:hover {
+  border: 1px solid @middle-gray;
+}
+
+.contact-field__control:active,
+.contact-field__control:focus {
+  border: 1px solid @gray;
+  outline: 1px solid @gray;
+}
+
+.contact-field__control:focus:invalid {
+  border: 1px solid @input-error;
+  outline: 1px solid @input-error;
+}
+
+.contact-field__control:active + .contact-field__icon,
+.contact-field__control:focus + .contact-field__icon {
+  fill: @light-green;
+}
+
+.contact-field__control:focus:invalid + .contact-field__icon {
+  fill: @input-error;
+}
+
+.contact-field__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.form-field__control--icon {
+  padding: 13px 34px 13px 15px;
+  background-size: 18px 20px;
+}

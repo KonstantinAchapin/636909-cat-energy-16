@@ -1,0 +1,41 @@
+.sending__row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.sending__column {
+  padding: 0 20px;
+  max-width: 100%;
+}
+
+.sending__button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  background: @light-green;
+  color: @white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.sending__button:hover {
+  background: @middle-green;
+}
+
+.sending__button:active {
+  background: @middle-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sending__text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
