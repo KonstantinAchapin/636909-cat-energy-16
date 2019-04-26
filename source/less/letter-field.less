@@ -72,3 +72,47 @@
   border: 1px solid @input-active-gray;
   outline: none;
 }
+
+@media (min-width: @tablet-width) {
+  .letter-field__title {
+    margin-left: 10px;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .letter-field__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 100vw;
+    height: 2px;
+    margin-top: 1px;
+    background: @light-green;
+    z-index: -1;
+  }
+
+  .letter-field__row {
+    padding: 0 70px;
+  }
+
+  .letter-field__textarea {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .letter-field__title {
+    margin-left: 40px;
+    padding-left: 50px;
+    padding-right: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .letter-field__row {
+    padding: 0 110px;
+  }
+}

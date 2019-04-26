@@ -6,7 +6,6 @@
   padding: 0 20px;
   font-weight: 400;
   font-size: 36px;
-  line-height: 1;
   font-family: "Oswald", "Arial", sans-serif;
   color: @dark-gray;
   margin-bottom: 40px;
@@ -22,4 +21,37 @@
   margin-top: 0;
   max-width: 270px;
   color: @dark-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection {
+    border-top: none;
+  }
+
+  .program-selection__title {
+    padding-left: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program-selection__subtitle {
+    max-width: 360px;
+    padding: 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection {
+    border-top: none;
+  }
+
+  .program-selection__title {
+    padding-left: 110px;
+  }
+
+  .program-selection__subtitle {
+    padding: 0 110px;
+  }
 }

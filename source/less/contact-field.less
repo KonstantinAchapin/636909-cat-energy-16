@@ -23,7 +23,7 @@
   font-size: 24px;
   line-height: 1;
   font-family: "Oswald", "Arial", sans-serif;
-  color: #111111;
+  color: @dark-gray;
   position: relative;
   display: inline-block;
   padding-right: 22px;
@@ -115,4 +115,74 @@
 .form-field__control--icon {
   padding: 13px 34px 13px 15px;
   background-size: 18px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-field__title {
+    margin-left: 10px;
+    padding-left: 40px;
+    width: 530px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .contact-field__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 100vw;
+    height: 2px;
+    margin-top: 1px;
+    background: @light-green;
+    z-index: -1;
+  }
+
+  .contact-field__row {
+    padding: 0 70px;
+    margin-bottom: 30px;
+  }
+
+  .contact-field__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contact-field__control {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-field__title {
+    margin-left: 40px;
+    padding-left: 50px;
+    padding-right: 40px;
+    width: 520px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .contact-field__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 110px;
+    margin-bottom: 30px;
+  }
+
+  .contact-field__field {
+    width: 570px;
+  }
+
+  .contact-field__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contact-field__control {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

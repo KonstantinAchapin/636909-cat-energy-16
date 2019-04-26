@@ -58,3 +58,42 @@
   border: 1px solid @input-error;
   outline: 1px solid @input-error;
 }
+
+@media (min-width: @tablet-width) {
+  .basic-data__fields {
+    padding: 0 65px;
+  }
+
+  .basic-data__text {
+    font-size: 20px;
+    font-weight: 400;
+    flex-shrink: 0;
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  .basic-data__control {
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .basic-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .basic-data__fields {
+    width: 570px;
+    padding: 0;
+    padding-left: 110px;
+  }
+
+  .basic-data__field {
+    margin-bottom: 26px;
+  }
+}

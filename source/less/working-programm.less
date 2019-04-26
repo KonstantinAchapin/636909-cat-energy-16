@@ -102,3 +102,49 @@
   background: @light-green;
   margin-top: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .working-programm--radio {
+    margin: 20px 70px;
+    padding: 30px 30px;
+    border: 1px solid @brightest-gray;
+  }
+
+  .working-programm__field {
+    padding-left: 60px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .working-programm__field:focus {
+    outline: none;
+  }
+
+  .working-programm__field::after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .working-programm--radio-button::before {
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    background: @light-green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .working-programm__field {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .working-programm--radio {
+    width: 100%;
+    margin: 0 80px;
+    padding: 30px 30px;
+    border: 1px solid #e6e6e6;
+  }
+}

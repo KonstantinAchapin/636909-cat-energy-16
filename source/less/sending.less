@@ -39,3 +39,43 @@
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
 }
+
+@media (min-width: @tablet-width) {
+  .sending__row {
+    padding: 0 70px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sending__column {
+    padding: 0;
+  }
+
+  .sending__button {
+    margin-right: 60px;
+    width: 284px;
+    padding: 16px 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sending__row {
+    padding: 0 110px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sending__column {
+    padding: 0;
+  }
+
+  .sending__button {
+    margin-right: 80px;
+    width: 570px;
+    padding: 16px 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
