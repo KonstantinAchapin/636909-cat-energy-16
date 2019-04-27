@@ -2,6 +2,27 @@
   background-color: @white;
 }
 
+.page-header--background {
+  position: relative;
+}
+
+.page-header--background::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 340px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #65a93c;
+  z-index: -1;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
 .page-header__main-menu {
   width: 280px;
   height: 69px;
@@ -47,13 +68,17 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
+  .page-header__wrapper {
     height: 106px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .page-header--background::after {
+    display: none;
   }
 
   .page-header__logo-image {
@@ -80,7 +105,23 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
+  .page-header--background::after {
+    display: block;
+    width: 50%;
+    margin-top: -135px;
+    right: 0;
+    min-height: 696px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: cover;
+    background-position: 0%;
+    z-index: 1;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .page-header__wrapper {
     height: 106px;
     display: flex;
     flex-direction: row;
@@ -98,9 +139,7 @@
   .page-header__nav-toggle {
     display: none;
   }
-}
 
-@media (min-width: @desktop-width) {
   .page-header__logo-image {
     width: 200px;
   }

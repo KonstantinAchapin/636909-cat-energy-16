@@ -7,6 +7,7 @@
   line-height: 20px;
   list-style: none;
   border-bottom: 1px solid @brightest-gray;
+  z-index: 2;
 }
 
 .site-list__item:first-child {
@@ -86,6 +87,16 @@
     width: 100%;
     height: 2px;
     background: @white;
+  }
+
+  .site-list__link--active--green::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: @light-green;
   }
 
   .site-list__link--dark {

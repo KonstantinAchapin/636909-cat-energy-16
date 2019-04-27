@@ -1,0 +1,100 @@
+.additional-present {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  width: 280px;
+  height: 290px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: 280px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.additional-present__block {
+  margin: auto;
+}
+
+.additional-present__image {
+  display: flex;
+  margin: auto;
+  margin-bottom: 60px;
+  fill: #ffffff;
+}
+
+.additional-present__text {
+  width: 172px;
+  display: flex;
+  margin: auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-present {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    width: 708px;
+    height: 201px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .additional-present__block {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .additional-present__image {
+    display: flex;
+    margin: 0;
+    fill: #ffffff;
+  }
+
+  .additional-present__text {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-present {
+    margin-right: 110px;
+    width: 245px;
+    height: 290px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: 245px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  .additional-present__block {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-present__image {
+    display: flex;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+
+  .additional-present__text {
+    margin: auto;
+    text-align: center;
+  }
+}

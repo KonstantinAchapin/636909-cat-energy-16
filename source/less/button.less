@@ -1,11 +1,16 @@
 .button {
-  padding: 9px 72px;
+  display: flex;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: @white;
   background: @light-green;
   text-decoration: none;
+}
+
+.button-text {
+  display: inline-block;
+  margin: auto;
 }
 
 .button:hover {
@@ -20,7 +25,6 @@
 .button--gray {
   background: @light-gray;
   color: @gray;
-  padding: 11px 93px;
   font-size: 16px;
 }
 
@@ -36,6 +40,5 @@
   .button {
     font-size: 20px;
     line-height: 20px;
-    padding: 15px 55px;
   }
 }
