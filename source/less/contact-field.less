@@ -6,7 +6,7 @@
 
 .contact-field__row {
   padding: 0 20px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
 }
 
 .contact-field__title {
-  width: 200px;
+  width: 182px;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -28,7 +28,7 @@
   display: inline-block;
   padding-right: 22px;
   margin-bottom: 35px;
-  margin-top: 0;
+  margin-top: 8px;
   background: @white;
 }
 
@@ -43,7 +43,7 @@
   top: 50%;
   width: 100vw;
   height: 2px;
-  margin-top: 1px;
+  margin-top: -9px;
   background: @light-green;
   z-index: -1;
 }
@@ -119,6 +119,7 @@
 
 @media (min-width: @tablet-width) {
   .contact-field__title {
+    margin-bottom: 68px;
     margin-left: 10px;
     padding-left: 40px;
     width: 530px;
@@ -138,9 +139,18 @@
     z-index: -1;
   }
 
+  .contact-field__title::after,
+  .contact-field__title::before {
+    margin-top: 3px;
+  }
+
+  .contact-field__field {
+    margin-bottom: 17px;
+  }
+
   .contact-field__row {
     padding: 0 70px;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
   }
 
   .contact-field__text {
