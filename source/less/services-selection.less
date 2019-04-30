@@ -87,6 +87,11 @@
   text-decoration: none;
 }
 
+.services-selection__toggle-link:hover.services-selection__toggle-link::after {
+  right: -45px;
+  width: 34px;
+}
+
 .services-selection__toggle-link::after {
   content: "";
   position: absolute;
@@ -96,8 +101,9 @@
   top: 4px;
   right: -35px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: contain;
+  transition: 0.3s;
 }
 
 .services-selection__toggle-link:active {
