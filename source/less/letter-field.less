@@ -3,7 +3,7 @@
   padding: 0;
   position: relative;
   border: none;
-  margin-bottom: 15px;
+  margin-bottom: 27px;
 }
 
 .letter-field__row {
@@ -50,7 +50,7 @@
   width: 100%;
   border: 1px solid @brightest-gray;
   color: @dark-gray;
-  padding: 14px 13px;
+  padding: 8px 14px;
   margin-right: 20px;
   height: 151px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -74,9 +74,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .letter-field {
+    margin-bottom: 66px;
+  }
+
   .letter-field__title {
     margin-left: 10px;
+    margin-bottom: 73px;
     padding-left: 40px;
+    padding-right: 40px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -100,6 +106,9 @@
   .letter-field__textarea {
     font-size: 20px;
     line-height: 20px;
+    padding: 0 18px;
+    padding-top: 14px;
+    height: auto;
   }
 }
 

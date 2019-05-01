@@ -25,6 +25,14 @@
   font-weight: 700;
 }
 
+.site-list__link:hover {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     width: 440px;
@@ -39,14 +47,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-  }
-
-  .site-list__link:hover {
-    opacity: 0.6;
-  }
-
-  .site-list__link:active {
-    opacity: 0.3;
   }
 
   .site-list__link--active::before {

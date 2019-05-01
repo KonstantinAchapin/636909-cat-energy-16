@@ -1,17 +1,16 @@
 .additional-goods {
-  margin-top: 50px;
   border-top: 1px solid @brightest-gray;
 }
 
 .additional-goods__column {
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 }
 
 
 .additional-goods__title {
   position: relative;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding: 0 20px;
   padding-bottom: 10px;
   font-size: 24px;
@@ -26,8 +25,8 @@
   top: 50%;
   width: 100vw;
   height: 3px;
-  margin-left: 20px;
-  margin-top: 2px;
+  margin-left: 25px;
+  margin-top: -2px;
   background: #68b738;
   z-index: -1;
 }
@@ -38,7 +37,7 @@
 }
 
 .additional-goods__item {
-  padding-bottom: 10px;
+  padding-bottom: 19px;
   border-top: 1px solid @brightest-gray;
   list-style: none;
 }
@@ -48,7 +47,9 @@
 }
 
 .additional-goods__subtitle {
-  margin-bottom: 6px;
+  margin-top: 13px;
+  margin-left: 3px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -83,6 +84,7 @@
 
 @media (min-width: @tablet-width) {
   .additional-goods {
+    margin-top: -101px;
     border: 0;
   }
 
@@ -92,7 +94,7 @@
   }
 
   .additional-goods__product {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,7 +102,7 @@
 
   .additional-goods__item {
     padding: 25px 38px;
-    padding-bottom: 25px;
+    padding-bottom: 29px;
     border-top: 1px solid @brightest-gray;
     border-left: 1px solid @brightest-gray;
     border-right: 1px solid @brightest-gray;
@@ -108,9 +110,14 @@
   }
 
   .additional-goods__title {
+    margin-bottom: 72px;
     padding-left: 65px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .additional-goods__column {
+    margin-bottom: 83px;
   }
 
   .additional-goods__toggle {
@@ -131,7 +138,7 @@
     left: 0;
     width: 30px;
     height: 3px;
-    margin-top: 2px;
+    margin-top: -1px;
     background: #68b738;
     z-index: -1;
   }
@@ -153,11 +160,13 @@
   }
 
   .additional-goods__title::after {
-    margin-left: 40px;
+    margin-left: 37px;
+    margin-top: 2px;
   }
 
   .additional-goods__title::before {
     width: 70px;
+    margin-top: 2px;
   }
 
   .additional-goods__products {
@@ -172,6 +181,19 @@
     align-items: center;
   }
 
+  .additional-goods__packing {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .additional-goods__price {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .additional-goods__item-wrapper {
     display: flex;
     flex-direction: row;
@@ -180,6 +202,10 @@
 
   .additional-goods__specification-text {
     padding-bottom: 0;
+    width: 298px;
+    padding-left: 6px;
+    margin-right: -7px;
+    margin-top: 8px;
   }
 
   .additional-goods__list {
@@ -189,8 +215,8 @@
 
   .additional-goods__item {
     padding: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-left: 0;
     border-right: 0;
   }

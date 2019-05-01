@@ -24,8 +24,9 @@
 
 .usage-example__text {
   margin-bottom: 26px;
-  width: 270px;
+  width: 95%;
   font-family: "Arial", sans-serif;
+  color: @gray;
 }
 
 .usage-example__list {
@@ -74,23 +75,25 @@
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
+  font-weight: 400;
 }
 
 .usage-example__reveal {
   padding-top: 257px;
-  margin-top: 36px;
+  margin-top: 28px;
 }
 
 .usage-example__image {
   position: absolute;
   bottom: 50px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .usage-example__range-wrapper {
   margin: auto;
   width: 200px;
-  margin-top: 15px;
+  margin-top: 18px;
   display: flex;
 }
 
@@ -153,7 +156,7 @@
   }
 
   .usage-example__reveal {
-    padding-top: 533px;
+    padding-top: 540px;
   }
 
   .usage-example__title {
@@ -169,10 +172,10 @@
   }
 
   .usage-example__text {
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     font-size: 16px;
     line-height: 24px;
-    width: 680px;
+    width: 95%;
   }
 
   .usage__example__results-wrapper {
@@ -211,11 +214,6 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-  }
-
-  .usage-example__image {
-    bottom: 50px;
-    left: 47px;
   }
 
   .usage-example__range-wrapper {
@@ -291,6 +289,11 @@
     padding: 0 110px;
   }
 
+  .usage-example__range-wrapper {
+    margin-top: 13px;
+    margin-right: 3px;
+  }
+
   .usage-example__title {
     margin: 0;
     padding: 0;
@@ -331,7 +334,8 @@
   }
 
   .usage-example__image {
-    left: 678px;
+    transform: translateX(0);
+    left: 683px;
     top: -57px;
   }
 
