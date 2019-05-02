@@ -63,7 +63,7 @@ input[type="radio"].visually-hidden {
   background: #68b738;
   text-decoration: none;
 }
-.button-text {
+.button__text {
   display: inline-block;
   margin: auto;
 }
