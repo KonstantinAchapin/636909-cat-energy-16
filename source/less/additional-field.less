@@ -128,7 +128,7 @@
 
 @media (min-width: @tablet-width) {
   .additional-field {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .additional-field__title {
@@ -158,6 +158,13 @@
     padding: 0 70px;
   }
 
+  .additional-field__row-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .additional-field__field {
     width: 230px;
     padding-left: 60px;
@@ -185,25 +192,45 @@
 
 @media (min-width: @desktop-width) {
   .additional-field {
+    overflow: hidden;
     margin-bottom: 26px;
   }
 
+  .additional-field__title-wrapper {
+    padding: 0;
+    overflow: visible;
+  }
+
   .additional-field__title {
-    margin-left: 40px;
-    margin-bottom: 57px;
-    padding-left: 50px;
+    padding: 0;
+    padding-left: 40px;
     padding-right: 40px;
+    margin: 0;
+    margin-bottom: 57px;
     font-size: 36px;
     line-height: 36px;
   }
 
+  .additional-field__title::after,
+  .additional-field__title::before {
+    margin-top: 5px;
+  }
+
   .additional-field__row {
-    padding: 0 110px;
+    padding: 0;
     justify-content: space-between;
   }
 
+  .additional-field__row-wrapper {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
   .additional-field__field {
-    width: 180px;
+    width: 190px;
     padding-left: 60px;
     margin-bottom: 35px;
     font-size: 20px;

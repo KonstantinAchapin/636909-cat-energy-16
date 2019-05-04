@@ -3,7 +3,8 @@
 var buttonOpen = document.querySelector(".page-header__nav-toggle");
 var navMenu = document.querySelector(".main-nav");
 
-navMenu.classList.remove('main-nav--nojs');
+navMenu.classList.remove('main-nav--no-js');
+buttonOpen.classList.remove('page-header__nav-toggle--no-js');
 
 buttonOpen.addEventListener('click', function() {
   if (navMenu.classList.contains('main-nav--closed')) {
@@ -20,7 +21,7 @@ buttonOpen.addEventListener('click', function() {
 //JS для яндекс карт
 ymaps.ready(function() {
   var myMap = new ymaps.Map('map', {
-      center: [59.938787, 30.323164],
+      center: [59.938920, 30.323164],
       zoom: 16,
       controls: []
     }, {

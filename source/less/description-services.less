@@ -21,7 +21,11 @@
   color: @gray;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
+}
+
+.description-services__line-break {
+  display: none;
 }
 
 .description-services__item {
@@ -83,6 +87,7 @@
 
   .description-services__title {
     margin-top: 41px;
+    margin-bottom: 56px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -98,9 +103,9 @@
   }
 
   .description-services__item {
-    width: 325px;
+    width: 327px;
     padding-left: 0;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
   }
 
   .description-services__item::after {
@@ -116,7 +121,7 @@
     font-size: 280px;
     color: @light-gray;
     top: 110px;
-    left: 118px;
+    left: 115px;
     z-index: -5;
   }
 
@@ -142,16 +147,20 @@
     line-height: 24px;
     padding-top: 116px;
   }
+
+  .description-services__line-break {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .description-services__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .description-services__item {
     padding-bottom: 84px;
-    width: 245px;
+    width: 248px;
   }
 
   .description-services__text {
