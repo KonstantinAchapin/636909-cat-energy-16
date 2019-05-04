@@ -31,7 +31,7 @@
 
 .usage-example__list {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -93,7 +93,7 @@
 .usage-example__range-wrapper {
   margin: auto;
   width: 200px;
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -111,7 +111,7 @@
 .usage-example__range-control {
   position: absolute;
   top: 3px;
-  left: 26%;
+  left: 30%;
   transform: translateX(-50%);
   width: 36px;
   height: 6px;
@@ -131,6 +131,10 @@
     position: relative;
     padding-bottom: 66px;
     background: none;
+  }
+
+  .usage-example__wrapper {
+    margin-top: -13px;
   }
 
   .usage-example::after {
@@ -162,17 +166,18 @@
   .usage-example__title {
     padding: 10px 30px;
     margin-bottom: 0;
+    margin-top: 32px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .usage-example__description {
     padding: 10px 30px;
-    padding-top: 38px;
+    padding-top: 42px;
   }
 
   .usage-example__text {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
     width: 95%;
@@ -194,26 +199,34 @@
   }
 
   .usage-example__weight {
+    margin-top: 16px;
     font-size: 30px;
     line-height: 37px;
     font-weight: 400;
   }
 
   .usage-example__procedure {
-    width: 140px;
-    margin-top: 15px;
+    width: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 10px;
     font-size: 14px;
     line-height: 14px;
     background: @white;
   }
 
   .usage-example__expenses {
-    margin-top: 5px;
+    margin-top: 8px;
+    margin-right: 4px;
     width: 180px;
     text-align: end;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+  }
+
+  .usage-example__image {
+    left: 51%;
   }
 
   .usage-example__range-wrapper {
@@ -277,16 +290,17 @@
     position: relative;
   }
 
+  .usage-example__wrapper {
+    margin-top: 0;
+    padding: 0 40px;
+  }
+
   .usage-example::before {
     height: 457px;
   }
 
   .usage-example::after {
     height: 457px;
-  }
-
-  .usage-example__wrapper {
-    padding: 0 110px;
   }
 
   .usage-example__range-wrapper {
@@ -335,8 +349,9 @@
 
   .usage-example__image {
     transform: translateX(0);
-    left: 683px;
-    top: -57px;
+    top: -51px;
+    left: auto;
+    right: 0;
   }
 
   .usage-example__weight {

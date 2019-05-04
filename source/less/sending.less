@@ -46,6 +46,9 @@
 @media (min-width: @tablet-width) {
   .sending__row {
     padding: 0 70px;
+  }
+
+  .sending__row-wrapper {
     display: flex;
     flex-direction: row;
   }
@@ -55,19 +58,30 @@
   }
 
   .sending__button {
-    margin-right: 60px;
+    margin-right: 66px;
     width: 284px;
     padding: 16px 15px;
     font-size: 20px;
     line-height: 20px;
   }
+
+  .sending__text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .sending__row {
-    padding: 0 110px;
+    padding: 0;
+  }
+
+  .sending__row-wrapper {
+    width: 1215px;
     display: flex;
     flex-direction: row;
+    padding: 0 40px;
   }
 
   .sending__column {

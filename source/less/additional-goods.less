@@ -94,7 +94,7 @@
   }
 
   .additional-goods__product {
-    margin-bottom: 14px;
+    margin-bottom: 7px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,6 +110,7 @@
   }
 
   .additional-goods__title {
+    margin-top: 32px;
     margin-bottom: 72px;
     padding-left: 65px;
     font-size: 36px;
@@ -117,7 +118,7 @@
   }
 
   .additional-goods__column {
-    margin-bottom: 83px;
+    margin-bottom: 70px;
   }
 
   .additional-goods__toggle {
@@ -134,13 +135,19 @@
   .additional-goods__title::before {
     content: "";
     position: absolute;
-    top: 50%;
     left: 0;
+    top: 50%;
     width: 30px;
     height: 3px;
     margin-top: -1px;
     background: #68b738;
     z-index: -1;
+  }
+
+  .additional-goods__specification-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: @gray;
   }
 
   .additional-goods__subtitle {
@@ -155,8 +162,38 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additional-goods {
+    margin-top: -64px;
+    overflow: hidden;
+  }
+
+  .additional-goods__title-wrapper {
+    padding: 0;
+    overflow: visible;
+  }
+
+  .additional-goods__products-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .additional-goods__column {
+    margin-right: 51px;
+    margin-bottom: 84px;
+  }
+
   .additional-goods__title {
-    padding-left: 110px;
+    display: inline-block;
+    margin: 0 0 78px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+    overflow: visible;
+  }
+
+  .additional-goods__title::after,
+  .additional-goods__title::before {
+    margin-top: 5px;
   }
 
   .additional-goods__title::after {
@@ -165,14 +202,10 @@
   }
 
   .additional-goods__title::before {
-    width: 70px;
+    width: 100vw;
+    right: 100%;
     margin-top: 2px;
-  }
-
-  .additional-goods__products {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    left: auto;
   }
 
   .additional-goods__product {
@@ -209,7 +242,7 @@
   }
 
   .additional-goods__list {
-    padding-left: 110px;
+    padding-left: 40px;
     width: 895px;
   }
 

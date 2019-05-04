@@ -3,11 +3,11 @@
   padding: 0;
   position: relative;
   border: none;
-  margin-bottom: 27px;
 }
 
 .letter-field__row {
   padding: 0 20px;
+  margin-bottom: 47px;
 }
 
 .letter-field__title-wrapper {
@@ -75,7 +75,7 @@
 
 @media (min-width: @tablet-width) {
   .letter-field {
-    margin-bottom: 66px;
+    margin-bottom: 62px;
   }
 
   .letter-field__title {
@@ -100,7 +100,8 @@
   }
 
   .letter-field__row {
-    padding: 0 70px;
+    padding: 0 65px;
+    margin-bottom: 64px;
   }
 
   .letter-field__textarea {
@@ -113,15 +114,37 @@
 }
 
 @media (min-width: @desktop-width) {
+  .letter-field {
+    overflow: hidden;
+    margin-bottom: 70px;
+  }
+
+  .letter-field__title-wrapper {
+    padding: 0;
+    overflow: visible;
+  }
+
   .letter-field__title {
-    margin-left: 40px;
-    padding-left: 50px;
+    padding: 0;
+    padding-left: 40px;
     padding-right: 40px;
+    margin: 0;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 36px;
   }
 
+  .letter-field__title::after,
+  .letter-field__title::before {
+    margin-top: 5px;
+  }
+
   .letter-field__row {
-    padding: 0 110px;
+    margin-bottom: 70px;
+    padding: 0;
+  }
+
+  .letter-field__row-wrapper {
+    padding: 0 40px;
   }
 }
