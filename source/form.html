@@ -48,76 +48,78 @@
   </header>
 
   <main class="page-main">
-    <div class="program-selection-wrapper">
-      <div class="page-inner">
-        <h1 class="program-selection__title">Подбор программы</h1>
-        <p class="program-selection__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </div>
-      <form class="form-block" action="https://echo.htmlacademy.ru" method="post">
-        <div class="basic-data">
-          <div class="basic-data__wrapper page-inner">
-            <div>
-              <fieldset class="basic-data__fields">
-                <label class="basic-data__field">
-                  <span class="basic-data__text">Имя:*</span>
-                  <input class="basic-data__control" type="text" placeholder="Барсик" required>
-                </label>
-                <label class="basic-data__field">
-                  <span class="basic-data__text">Вес (кг):*</span>
-                  <input class="basic-data__control" type="text" placeholder="7" required>
-                </label>
-                <label class="basic-data__field">
-                  <span class="basic-data__text">Возраст (лет):</span>
-                  <input class="basic-data__control" type="text" placeholder="7">
-                </label>
-              </fieldset>
-            </div>
-            <div>
-              <fieldset class="working-programm working-programm--radio">
-                <input class="working-programm__replacement" type="radio" id="radio-1" name="choice" checked>
-                <label class="working-programm__field  working-programm--radio-button" for="radio-1" tabindex="0">Похудение</label>
-                <input class="working-programm__replacement" type="radio" id="radio-2" name="choice">
-                <label class="working-programm__field  working-programm--radio-button" for="radio-2" tabindex="0">Набор массы</label>
-                <input class="working-programm__replacement" type="radio" id="radio-3" name="choice">
-                <label class="working-programm__field  working-programm--radio-button" for="radio-3" tabindex="0">Не знаю (Нужен ваш совет)</label>
-              </fieldset>
-            </div>
-          </div>
+    <section class="program-selection-wrapper">
+      <div class="program-selection-wrapper">
+        <div class="page-inner">
+          <h1 class="program-selection__title">Подбор программы</h1>
+          <p class="program-selection__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
-        <fieldset class="contact-field">
-          <div class="contact-field__title-wrapper page-inner">
-            <h3 class="contact-field__title">Контактные данные (владельца кота)</h3>
-          </div>
-          <div class="contact-field__row">
-            <div class="contact-field__row-wrapper page-inner">
-              <div class="contact-field__email-block">
-                <label class="contact-field__field">
-                  <span class="contact-field__text">E-mail:*</span>
-                  <input class="contact-field__control contact-field__control--icon" type="email" placeholder="kuklachev@gmail.com" required>
-                  <svg class="contact-field__icon" width="18" height="20">
-                    <use xlink:href="#icon-mail"></use>
-                  </svg>
-                </label>
+        <form class="form-block" action="https://echo.htmlacademy.ru" method="post">
+          <div class="basic-data">
+            <div class="basic-data__wrapper page-inner">
+              <div>
+                <fieldset class="basic-data__fields">
+                  <label class="basic-data__field">
+                    <span class="basic-data__text">Имя:*</span>
+                    <input class="basic-data__control" type="text" placeholder="Барсик" required>
+                  </label>
+                  <label class="basic-data__field">
+                    <span class="basic-data__text">Вес (кг):*</span>
+                    <input class="basic-data__control" type="text" placeholder="7" required>
+                  </label>
+                  <label class="basic-data__field">
+                    <span class="basic-data__text">Возраст (лет):</span>
+                    <input class="basic-data__control" type="text" placeholder="7">
+                  </label>
+                </fieldset>
               </div>
-              <div class="contact-field__phone-block">
-                <label class="contact-field__field">
-                  <span class="contact-field__text">Телефон:*</span>
-                  <input class="contact-field__control contact-field__control--icon" type="tel" placeholder="8 (960) 900-60-90" required>
-                  <svg class="contact-field__icon" width="20" height="20">
-                    <use xlink:href="#icon-phone"></use>
-                  </svg>
-                </label>
+              <div>
+                <fieldset class="working-programm working-programm--radio">
+                  <input class="working-programm__replacement" type="radio" id="radio-1" name="choice" checked>
+                  <label class="working-programm__field  working-programm--radio-button" for="radio-1" tabindex="0">Похудение</label>
+                  <input class="working-programm__replacement" type="radio" id="radio-2" name="choice">
+                  <label class="working-programm__field  working-programm--radio-button" for="radio-2" tabindex="0">Набор массы</label>
+                  <input class="working-programm__replacement" type="radio" id="radio-3" name="choice">
+                  <label class="working-programm__field  working-programm--radio-button" for="radio-3" tabindex="0">Не знаю (Нужен ваш совет)</label>
+                </fieldset>
               </div>
             </div>
           </div>
-        </fieldset>
-        <div class="letter-field">
-          <div class="letter-field__title-wrapper page-inner">
-            <label class="letter-field__title" for="for-textarea">Комментарий</label>
-          </div>
-          <div class="letter-field__row">
-            <div class="letter-field__row-wrapper page-inner">
-              <textarea class="letter-field__textarea" rows="8" id="for-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="contact-field">
+            <div class="contact-field__title-wrapper page-inner">
+              <h3 class="contact-field__title">Контактные данные (владельца кота)</h3>
+            </div>
+            <div class="contact-field__row">
+              <div class="contact-field__row-wrapper page-inner">
+                <div class="contact-field__email-block">
+                  <label class="contact-field__field">
+                    <span class="contact-field__text">E-mail:*</span>
+                    <input class="contact-field__control contact-field__control--icon" type="email" placeholder="kuklachev@gmail.com" required>
+                    <svg class="contact-field__icon" width="18" height="20">
+                      <use xlink:href="#icon-mail"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="contact-field__phone-block">
+                  <label class="contact-field__field">
+                    <span class="contact-field__text">Телефон:*</span>
+                    <input class="contact-field__control contact-field__control--icon" type="tel" placeholder="8 (960) 900-60-90" required>
+                    <svg class="contact-field__icon" width="20" height="20">
+                      <use xlink:href="#icon-phone"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="letter-field">
+            <div class="letter-field__title-wrapper page-inner">
+              <label class="letter-field__title" for="for-textarea">Комментарий</label>
+            </div>
+            <div class="letter-field__row">
+              <div class="letter-field__row-wrapper page-inner">
+                <textarea class="letter-field__textarea" rows="8" id="for-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </div>
           </div>
           <fieldset class="additional-field">
@@ -155,21 +157,22 @@
               </div>
             </div>
           </div>
-      </form>
-      </section>
+        </form>
+      </div>
+    </section>
 
-      <section class="location location--gray">
-        <div class="location__wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="location__text location__text--catalog-position">
-            <b class="location__invitation">Приглашаем<br> к сотрудничеству дилеров!</b>
-            <p class="location__adress">ул. Большая<br> Конюшенная, д. 19/8 <span class="location__adress--city">Санкт-Петербург</span></p>
-          </div>
-          <div class="location__map" id="map">
-
-          </div>
+    <section class="location location--gray">
+      <div class="location__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="location__text location__text--catalog-position">
+          <b class="location__invitation">Приглашаем<br> к сотрудничеству дилеров!</b>
+          <p class="location__adress">ул. Большая<br> Конюшенная, д. 19/8 <span class="location__adress--city">Санкт-Петербург</span></p>
         </div>
-      </section>
+        <div class="location__map" id="map">
+
+        </div>
+      </div>
+    </section>
 
   </main>
 
