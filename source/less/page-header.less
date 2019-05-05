@@ -25,23 +25,22 @@
 
 .page-header__main-menu {
   width: 87%;
-  min-height: 66px;
+  height: 66px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
 }
 
 .page-header__logo {
   display: flex;
-  margin: auto 0;
 }
 
 .page-header__nav-toggle {
   width: 24px;
   height: 18px;
-  margin: auto 0;
   border: none;
   background-color: #ffffff;
   background-image: url("../img/icon-mobile-menu.svg");
@@ -72,12 +71,13 @@
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
     height: 106px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    align-items: center;
   }
 
   .page-header--background::after {

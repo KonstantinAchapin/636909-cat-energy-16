@@ -85,10 +85,10 @@
   text-transform: uppercase;
   color: @dark-gray;
   text-decoration: none;
+  z-index: 1;
 }
 
 .services-selection__toggle-link:hover.services-selection__toggle-link::after {
-  right: -45px;
   width: 34px;
 }
 
@@ -97,12 +97,12 @@
   position: absolute;
   width: 24px;
   height: 11px;
-  background-image: url("../img/icon-right-arrow-long.svg");
-  top: 4px;
-  right: -35px;
+  background-image: url("../img/right-arrow-verylong.svg");
+  top: 3px;
+  left: 112%;
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: cover;
   transition: 0.3s;
 }
 
@@ -183,7 +183,8 @@
   }
 
   .services-selection__toggle-link::after {
-    right: -47px;
+    left: 118%;
+    top: 5px;
   }
 }
 

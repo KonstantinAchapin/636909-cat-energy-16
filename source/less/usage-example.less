@@ -86,8 +86,8 @@
 .usage-example__image {
   position: absolute;
   bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .usage-example__range-wrapper {
@@ -117,6 +117,7 @@
   height: 6px;
   border-radius: 5px;
   background: #68b738;
+  cursor: pointer;
 }
 
 
@@ -131,6 +132,7 @@
     position: relative;
     padding-bottom: 66px;
     background: none;
+    border-top: 1px solid @brightest-gray;
   }
 
   .usage-example__wrapper {
@@ -213,6 +215,7 @@
     font-size: 14px;
     line-height: 14px;
     background: @white;
+    color: @gray;
   }
 
   .usage-example__expenses {
@@ -226,7 +229,7 @@
   }
 
   .usage-example__image {
-    left: 51%;
+    right: 51%;
   }
 
   .usage-example__range-wrapper {
@@ -282,11 +285,24 @@
 
   .usage-example__range-text {
     font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+    cursor: pointer;
+  }
+
+  .usage-example__range-text:hover {
+    border-bottom: 1px solid #989898;
+  }
+
+  .usage-example__range-text:active {
+    border-bottom: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .usage-example {
+    border-top: none;
     position: relative;
   }
 
