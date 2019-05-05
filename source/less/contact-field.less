@@ -60,7 +60,7 @@
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   flex-shrink: 0;
-  margin-right: 15px;
+  margin-right: 10px;
   text-transform: uppercase;
   color: #222222;
 }
@@ -112,7 +112,8 @@
   transform: translateY(-50%);
 }
 
-.form-field__control--icon {
+.contact-field__control--icon-email,
+.contact-field__control--icon-phone {
   padding: 13px 34px 13px 15px;
   background-size: 18px 20px;
 }
@@ -156,11 +157,16 @@
   .contact-field__text {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 18px;
   }
 
   .contact-field__control {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .contact-field__control--icon-email {
+    padding-left: 22px;
   }
 }
 
@@ -180,6 +186,7 @@
     padding-right: 40px;
     margin: 0;
     margin-bottom: 72px;
+    width: auto;
     font-size: 36px;
     line-height: 36px;
   }

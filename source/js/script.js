@@ -18,6 +18,7 @@ buttonOpen.addEventListener('click', function() {
   }
 });
 
+
 //JS для яндекс карт
 ymaps.ready(function() {
   var myMap = new ymaps.Map('map', {
@@ -58,3 +59,27 @@ ymaps.ready(function() {
     .add(myPlacemarkWithContent);
   myMap.behaviors.disable('scrollZoom');
 });
+
+//Псевдо загрузка по ajax новых товаров
+
+var catalogAddButton = document.querySelector(".catalog-add__toggle");
+
+catalogAddButton.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  alert("Загрузились новые товары по ajax");
+});
+
+//Псевдо открытие модального окна
+
+var catalogButton = document.querySelectorAll(".catalog-list__toggle");
+
+var clickButton = function (button) {
+  button.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    alert("Открылось модальное окно");
+  });
+};
+
+for (var i = 0; i <= catalogButton.length; i++) {
+  clickButton(catalogButton[i]);
+}
