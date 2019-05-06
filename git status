@@ -1,0 +1,121 @@
+[33mcommit 0560b6b166b117dc308a312218aa219c93310e15[m[33m ([m[1;36mHEAD -> [m[1;32mmodule3-task1[m[33m)[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Sat Apr 6 17:49:38 2019 +0200
+
+    {
+
+[33mcommit 91ff9acd78175201d5c39e6a5a048f17008222b3[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Sat Apr 6 17:12:51 2019 +0200
+
+    Задаёт стили и шрифты для body
+
+[33mcommit eb16c9cd32633a6e40e13379da46f3c6a59e90bf[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31macademy/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: d8e7a5f e4fead1
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Fri Apr 5 10:44:15 2019 +0300
+
+    Merge pull request #2 from KonstantinAchapin/module2-task1
+
+[33mcommit d8e7a5f671345bbd8475b84ff45bfc778f2de4c2[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Fri Apr 5 10:04:59 2019 +0300
+
+    :kissing_cat: Добавляет сборку Less на Gulp
+
+[33mcommit 049d2133b176217b8836d09ffca392fff2f007a0[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Fri Apr 5 10:04:51 2019 +0300
+
+    :gift: Нарезает графику для вёрстки
+
+[33mcommit e4fead1656de1f994a4303b038196b9fe6c69ee5[m[33m ([m[1;31morigin/module2-task1[m[33m, [m[1;32mmodule2-task1[m[33m)[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Thu Apr 4 15:36:57 2019 +0200
+
+    Исправляет ошибки
+
+[33mcommit eda0a9f1fe02a6e3e82eba1455429d6578b3df43[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Wed Apr 3 11:05:03 2019 +0200
+
+    Добавляет разметку футера на страницу формы
+
+[33mcommit 9b5ce42fb78a81bb81695dd31d4341bc0034f7e6[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Wed Apr 3 11:01:04 2019 +0200
+
+    Добавляет разметку хэдера на страницу формы
+
+[33mcommit ad1fd6b6c9a0cfcbae00d6731a5e1be719f33fcf[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Wed Apr 3 10:55:11 2019 +0200
+
+    Добавляет разметку футера на странице каталога
+
+[33mcommit 2458249817f356c08431c9421a12539592d3be5b[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Wed Apr 3 10:53:26 2019 +0200
+
+    Добавляет разметку секции товаров каталога
+
+[33mcommit b47eb2ddf40e3643119a94bda65ab38fabe3cec4[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Wed Apr 3 09:16:19 2019 +0200
+
+    Добаляет разметку хэдэра на страницу каталога
+
+[33mcommit 568980e822254d102473771c9b6dba609461aa97[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Tue Apr 2 20:01:29 2019 +0200
+
+    Добавляет разметку футера, заканчивает разметку главной страницы (index.html)
+
+[33mcommit 123bb476ec3a5753df66343b8ca91a3427a2b82b[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Tue Apr 2 19:26:10 2019 +0200
+
+    Добавляет разметку секции описания услуг
+
+[33mcommit 685e4d6eea4faec387cc0d772d8fd74ba4ba7025[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Tue Apr 2 17:04:46 2019 +0200
+
+    Добавляет разметку секции выбора режима питания
+
+[33mcommit 5734d362dc0cb6757dab6c084fc48e2153ae50e5[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Tue Apr 2 16:10:34 2019 +0200
+
+    Добавляет разметку хэдэра
+
+[33mcommit 478a2dc4aba92525ab1866c1fb8a1d507ccd867e[m
+Merge: a5c3dc5 bdb3617
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Mon Apr 1 22:14:59 2019 +0300
+
+    Merge pull request #1 from KonstantinAchapin/module1-task1
+
+[33mcommit bdb3617a67e1bffd1da3fd09f223ef3e8936d8c2[m[33m ([m[1;31morigin/module1-task1[m[33m, [m[1;32mmodule1-task1[m[33m)[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Sun Mar 31 20:01:22 2019 +0200
+
+    Добавляет отступ
+
+[33mcommit 8d7201170779eb834d64c669d684433e79c06fe1[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Sun Mar 31 19:59:08 2019 +0200
+
+    Добавляет ссылку наставника
+
+[33mcommit 1abb52a1fb56e7c071cc262065c90fa6f75f8e6f[m
+Author: Константин Ачапин <KonstantinAchapin@mail.ru>
+Date:   Sun Mar 31 19:33:44 2019 +0200
+
+    Добавляет наставника
+
+[33mcommit a5c3dc5e42fdcf2f7e1601d41dc5bce289b66dc0[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Fri Mar 29 08:56:32 2019 +0300
+
+    :hatching_chick:
