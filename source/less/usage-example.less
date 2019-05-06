@@ -1,5 +1,5 @@
 .usage-example {
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   background: @light-gray;
 }
 
@@ -23,15 +23,15 @@
 }
 
 .usage-example__text {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   width: 95%;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   color: @gray;
 }
 
 .usage-example__list {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -63,7 +63,7 @@
   margin-top: 9px;
   width: 75px;
   text-transform: lowercase;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 12px;
   line-height: 12px;
   background: @light-gray;
@@ -86,14 +86,14 @@
 .usage-example__image {
   position: absolute;
   bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .usage-example__range-wrapper {
   margin: auto;
   width: 200px;
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -111,12 +111,13 @@
 .usage-example__range-control {
   position: absolute;
   top: 3px;
-  left: 26%;
+  left: 30%;
   transform: translateX(-50%);
   width: 36px;
   height: 6px;
   border-radius: 5px;
   background: #68b738;
+  cursor: pointer;
 }
 
 
@@ -129,8 +130,15 @@
 @media (min-width: @tablet-width) {
   .usage-example {
     position: relative;
+    padding-top: 11px;
+    margin-top: -11px;
     padding-bottom: 66px;
     background: none;
+    border-top: 1px solid @brightest-gray;
+  }
+
+  .usage-example__wrapper {
+    margin-top: -13px;
   }
 
   .usage-example::after {
@@ -162,17 +170,18 @@
   .usage-example__title {
     padding: 10px 30px;
     margin-bottom: 0;
+    margin-top: 32px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .usage-example__description {
     padding: 10px 30px;
-    padding-top: 38px;
+    padding-top: 42px;
   }
 
   .usage-example__text {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
     width: 95%;
@@ -194,26 +203,35 @@
   }
 
   .usage-example__weight {
+    margin-top: 16px;
     font-size: 30px;
     line-height: 37px;
     font-weight: 400;
   }
 
   .usage-example__procedure {
-    width: 140px;
-    margin-top: 15px;
+    width: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 10px;
     font-size: 14px;
     line-height: 14px;
     background: @white;
+    color: @gray;
   }
 
   .usage-example__expenses {
-    margin-top: 5px;
+    margin-top: 8px;
+    margin-right: 4px;
     width: 180px;
     text-align: end;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+  }
+
+  .usage-example__image {
+    right: 49%;
   }
 
   .usage-example__range-wrapper {
@@ -269,12 +287,30 @@
 
   .usage-example__range-text {
     font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+    cursor: pointer;
+  }
+
+  .usage-example__range-text:hover {
+    border-bottom: 1px solid #989898;
+  }
+
+  .usage-example__range-text:active {
+    border-bottom: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .usage-example {
+    border-top: none;
     position: relative;
+  }
+
+  .usage-example__wrapper {
+    margin-top: 0;
+    padding: 0 40px;
   }
 
   .usage-example::before {
@@ -283,10 +319,6 @@
 
   .usage-example::after {
     height: 457px;
-  }
-
-  .usage-example__wrapper {
-    padding: 0 110px;
   }
 
   .usage-example__range-wrapper {
@@ -335,8 +367,9 @@
 
   .usage-example__image {
     transform: translateX(0);
-    left: 683px;
-    top: -57px;
+    top: -51px;
+    left: auto;
+    right: 0;
   }
 
   .usage-example__weight {
@@ -344,7 +377,7 @@
   }
 
   .usage-example__procedure {
-    margin-top: 14px;
+    margin-top: 10px;
     background: @light-gray;
   }
 }

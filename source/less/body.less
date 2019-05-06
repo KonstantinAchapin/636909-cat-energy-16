@@ -21,12 +21,6 @@ body {
   color: @dark-gray;
 }
 
-.page-inner {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -47,14 +41,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-@media (min-width: @tablet-width) {
-  .page-inner {
-    width: 768px;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .page-inner {
-    width: 1440px;
+    max-width: 1300px;
+    margin: auto;
   }
 }

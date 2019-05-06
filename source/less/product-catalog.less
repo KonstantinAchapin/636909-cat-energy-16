@@ -6,7 +6,7 @@
 
 .product-catalog__title {
   position: relative;
-  right: 10px;
+  right: 13px;
   margin: 0;
   padding: 0;
   font-size: 36px;
@@ -16,6 +16,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .product-catalog__wrapper {
+    padding: 0 30px;
+  }
+
   .product-catalog__title-wrapper {
     border: none;
   }
@@ -32,6 +36,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .product-catalog__wrapper {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
   .product-catalog__title {
     margin-top: 37px;
     margin-bottom: 136px;
