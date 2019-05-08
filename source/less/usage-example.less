@@ -122,9 +122,15 @@
 
 
 .usage-example__range-text {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
   text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -298,7 +304,8 @@
   }
 
   .usage-example__range-text:active {
-    border-bottom: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    outline: none;
   }
 }
 
@@ -314,6 +321,7 @@
   }
 
   .usage-example::before {
+    width: 25.2%;
     height: 457px;
   }
 
