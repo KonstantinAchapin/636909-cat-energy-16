@@ -79,21 +79,18 @@
 }
 
 .usage-example__reveal {
-  padding-top: 257px;
-  margin-top: 28px;
-}
-
-.usage-example__image {
-  position: absolute;
-  bottom: 50px;
-  right: 50%;
-  transform: translateX(50%);
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .usage-example__range-wrapper {
   margin: auto;
   width: 200px;
-  margin-top: 20px;
+  margin-top: 26px;
   display: flex;
 }
 
@@ -169,10 +166,6 @@
     z-index: -25;
   }
 
-  .usage-example__reveal {
-    padding-top: 540px;
-  }
-
   .usage-example__title {
     padding: 10px 30px;
     margin-bottom: 0;
@@ -208,6 +201,14 @@
     height: 74px;
   }
 
+  .usage-example__reveal {
+    margin-top: 47px;
+  }
+
+  .usage-example__image {
+    margin-left: 10px;
+  }
+
   .usage-example__weight {
     margin-top: 16px;
     font-size: 30px;
@@ -236,11 +237,8 @@
     font-weight: 400;
   }
 
-  .usage-example__image {
-    right: 49%;
-  }
-
   .usage-example__range-wrapper {
+    margin-top: 20px;
     width: 570px;
   }
 
@@ -322,11 +320,11 @@
 
   .usage-example::before {
     width: 25.2%;
-    height: 457px;
+    height: 460px;
   }
 
   .usage-example::after {
-    height: 457px;
+    height: 460px;
   }
 
   .usage-example__range-wrapper {
@@ -336,12 +334,22 @@
 
   .usage-example__title {
     margin: 0;
+    margin-bottom: 66px;
     padding: 0;
   }
 
   .usage-example__description {
+    display: flex;
+    flex-direction: row;
     padding: 0;
-    padding-top: 129px;
+  }
+
+  .usage-example__description-wrapper {
+    margin-right: 109px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 64px;
   }
 
   .usage-example__text {
@@ -358,6 +366,14 @@
     width: 270px;
   }
 
+  .usage-example__range-control,
+  .usage-example__range-control:active,
+  .usage-example__range-control:hover {
+    top: -14px;
+    width: 9px;
+    height: 9px;
+  }
+
   .usage-example__expenses--position {
     position: relative;
     left: 57px;
@@ -369,15 +385,14 @@
 
   .usage-example__reveal {
     padding: 0;
-    margin-top: -40px;
+    margin-top: -183px;
     float: right;
   }
 
   .usage-example__image {
-    transform: translateX(0);
-    top: -51px;
-    left: auto;
-    right: 0;
+    margin-bottom: 27px;
+    position: relative;
+    left: 38px;
   }
 
   .usage-example__weight {

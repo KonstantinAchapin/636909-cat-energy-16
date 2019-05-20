@@ -24,10 +24,14 @@
   font-weight: 400;
 }
 
+.location__invitation--carry {
+  display: inline-block;
+  width: 125px;
+}
+
 .location__adress {
   width: 140px;
   margin: 0;
-  margin-right: 5px;
   padding: 0;
   font-size: 14px;
   line-height: 20px;
@@ -51,7 +55,7 @@
 @media (min-width: @tablet-width) {
   .location__text {
     margin-top: 62px;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
     padding: 0 72px;
   }
 
@@ -68,8 +72,13 @@
     font-weight: 400;
   }
 
+  .location__invitation--carry {
+    width: 180px;
+  }
+
   .location__adress {
     margin: 0;
+    padding-right: 5px;
     width: 165px;
     font-size: 16px;
     line-height: 20px;
@@ -121,6 +130,7 @@
 
   .location__adress {
     text-align: left;
+    padding-right: 0;
     margin-right: 79px;
     margin-top: 59px;
   }

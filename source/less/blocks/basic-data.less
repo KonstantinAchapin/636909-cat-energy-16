@@ -38,6 +38,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  transition: 0.3s;
 }
 
 .basic-data__control::placeholder {
@@ -48,20 +49,20 @@
   border: 1px solid @middle-gray;
 }
 
+.basic-data__control:focus:invalid {
+  border: 1px solid @input-error;
+  outline: 1px solid @input-error;
+}
+
 .basic-data__control:active,
 .basic-data__control:focus {
   border: 1px solid @input-active-gray;
   outline: 1px solid @input-active-gray;
 }
 
-.basic-data__control:focus:invalid {
-  border: 1px solid @input-error;
-  outline: 1px solid @input-error;
-}
-
 @media (min-width: @tablet-width) {
   .basic-data__fields {
-    padding: 0 65px;
+    padding: 0 69px 0 61px;
     margin-left: 10px;
     margin-bottom: 53px;
   }
@@ -79,8 +80,12 @@
     color: #222222;
   }
 
+  .basic-data__text--indent {
+    margin-right: 18px;
+  }
+
   .basic-data__control {
-    padding: 10px 15px;
+    padding: 10px 21px;
     font-size: 20px;
     line-height: 20px;
   }
