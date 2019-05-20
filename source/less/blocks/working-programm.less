@@ -90,11 +90,11 @@
   transform: translateY(-50%) rotate(45deg);
 }
 
-.working-programm--radio-button::after {
+.working-programm__field--radio-button::after {
   border-radius: 500px;
 }
 
-.working-programm--radio-button::before {
+.working-programm__field--radio-button::before {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -113,19 +113,20 @@
   }
 
   .working-programm__field {
-    padding-left: 60px;
+    padding-left: 57px;
     margin-bottom: 14px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .working-programm__field::after {
+    left: -3px;
     width: 40px;
     height: 40px;
   }
 
-  .working-programm--radio-button::before {
-    left: 12px;
+  .working-programm__field--radio-button::before {
+    left: 9px;
     width: 18px;
     height: 18px;
     background: @light-green;
